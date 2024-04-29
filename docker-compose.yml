@@ -46,3 +46,9 @@ services:
       MINIO_ROOT_USER: "4eb6a7db8b58994ea61b"
       MINIO_ROOT_PASSWORD: "prCv8t9LGRH18FB5pLr5jqDZ/dixZkb9cFajueGW"
       MINIO_DEFAULT_BUCKETS: "edcs3gnsadevb"
+  activemq:
+    container_name: activemq
+    image: codingpuss/activemq:5.17.2-jre-19-alpine
+    ports:
+      - 8161:8161
+      - 61616:61616

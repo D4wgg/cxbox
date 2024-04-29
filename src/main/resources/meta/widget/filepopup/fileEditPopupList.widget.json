@@ -1,0 +1,31 @@
+{
+  "name": "fileEditPopupList",
+  "title": "",
+  "type": "List",
+  "bc": "fileEditPopup",
+  "fields": [
+    {
+      "title": "Client",
+      "key": "clientName",
+      "type": "input"
+    },
+    {
+      "title": "Name",
+      "key": "fileName",
+      "type": "input"
+    },
+    {
+      "title": "Type",
+      "key": "type",
+      "type": "input"
+    }
+  ],
+  "options": {
+    "actionGroups": {
+      "include": [
+        "edit",
+        "delete"
+      ]
+    }
+  }
+}

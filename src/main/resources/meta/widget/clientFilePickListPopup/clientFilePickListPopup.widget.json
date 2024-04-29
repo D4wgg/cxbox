@@ -1,0 +1,21 @@
+{
+  "name": "clientFilePickListPopup",
+  "title": "List of names",
+  "type": "PickListPopup",
+  "bc": "clientFilePickListPopup",
+  "showCondition": [],
+  "fields": [
+    {
+      "title": "ID",
+      "key": "id",
+      "type": "input"
+    },
+    {
+      "title": "Name",
+      "key": "fullName",
+      "type": "input"
+    }
+  ],
+  "axisFields": [],
+  "chart": []
+}

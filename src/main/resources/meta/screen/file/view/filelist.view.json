@@ -1,0 +1,22 @@
+{
+  "name": "filelist",
+  "title": "File List",
+  "template": "DashboardView",
+  "url": "/screen/file/view/filelist",
+  "widgets": [
+    {
+      "widgetName": "fileListHeader",
+      "position": 0,
+      "gridWidth": 24
+    },
+    {
+      "widgetName": "fileList",
+      "position": 10,
+      "gridWidth": 24
+    }
+  ],
+  "rolesAllowed": [
+    "CXBOX_USER",
+    "ADMIN"
+  ]
+}

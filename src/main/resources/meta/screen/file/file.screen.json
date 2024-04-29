@@ -1,0 +1,21 @@
+{
+  "name": "file",
+  "icon": "folder",
+  "order": 5,
+  "title": "File",
+  "navigation": {
+    "menu": [
+      {
+        "title": "Files",
+        "child": [
+          {
+            "viewName": "filelist"
+          },
+          {
+            "viewName": "fileedit"
+          }
+        ]
+      }
+    ]
+  }
+}

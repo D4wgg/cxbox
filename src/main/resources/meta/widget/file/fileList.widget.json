@@ -1,0 +1,23 @@
+{
+  "name": "fileList",
+  "title": "",
+  "type": "List",
+  "bc": "file",
+  "fields": [
+    {
+      "title": "Client",
+      "key": "clientName",
+      "type": "input"
+    },
+    {
+      "title": "Name",
+      "key": "fileName",
+      "type": "input"
+    },
+    {
+      "title": "Type",
+      "key": "type",
+      "type": "input"
+    }
+  ]
+}

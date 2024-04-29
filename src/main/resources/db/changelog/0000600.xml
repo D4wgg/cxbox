@@ -468,4 +468,35 @@
     </loadUpdateData>
   </changeSet>
 
+  <changeSet id="create file table" author="iborzenkov">
+    <createTable tableName="FILE">
+      <column name="ID" remarks="Identifier" type="NUMBER(19,0)">
+        <constraints primaryKey="true"/>
+      </column>
+      <column defaultValueComputed="${now}" name="CREATED_DATE" remarks="Creation date"
+        type="TIMESTAMP(6)">
+        <constraints nullable="false"/>
+      </column>
+      <column defaultValueComputed="${now}" name="UPDATED_DATE" remarks="Last updated date"
+        type="TIMESTAMP(6)">
+        <constraints nullable="false"/>
+      </column>
+      <column defaultValueNumeric="1" name="CREATED_BY_USER_ID" type="NUMBER(19, 0)">
+        <constraints nullable="false" foreignKeyName="CONTACT_CREATED_BY" references="USERS"/>
+      </column>
+      <column defaultValueNumeric="1" name="LAST_UPD_BY_USER_ID" type="NUMBER(19, 0)">
+        <constraints nullable="false" foreignKeyName="CONTACT_LAST_UPD_BY" references="USERS"/>
+      </column>
+      <column defaultValueNumeric="0" name="VSTAMP" type="NUMBER(19, 0)">
+        <constraints nullable="false"/>
+      </column>
+      <column name="edit_step" type="VARCHAR(200)"/>
+      <column name="type" type="VARCHAR(200)"/>
+      <column name="name" type="VARCHAR(200)"/>
+      <column name="CLIENT_ID" type="NUMBER(19,0)">
+        <constraints foreignKeyName="FILE_UPLOADED_BY" references="CLIENT"/>
+      </column>
+    </createTable>
+  </changeSet>
+
 </databaseChangeLog>

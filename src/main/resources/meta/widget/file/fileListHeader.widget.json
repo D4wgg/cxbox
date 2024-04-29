@@ -1,0 +1,7 @@
+{
+  "name": "fileListHeader",
+  "title": "File List",
+  "type": "HeaderWidget",
+  "bc": "file",
+  "fields": []
+}
