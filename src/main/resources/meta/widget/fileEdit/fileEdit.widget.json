@@ -1,0 +1,65 @@
+{
+  "name": "fileEdit",
+  "title": "General information",
+  "type": "Form",
+  "bc": "fileEdit",
+  "fields": [
+    {
+      "label": "Client Name",
+      "key": "clientName",
+      "type": "pickList",
+      "popupBcName": "clientFilePickListPopup",
+      "pickMap": {
+        "clientName": "fullName",
+        "clientId": "id"
+      }
+    },
+    {
+      "label": "Name",
+      "key": "fileName",
+      "type": "input"
+    },
+    {
+      "label": "Type",
+      "key": "type",
+      "type": "dictionary"
+    }
+  ],
+  "options": {
+    "actionGroups": {
+      "include": [
+        "save",
+        "saveAndContinue",
+        "cancel-create"
+      ]
+    },
+    "layout": {
+      "rows": [
+        {
+          "cols": [
+            {
+              "fieldKey": "clientName",
+              "span": 12
+            }
+          ]
+        },
+        {
+          "cols": [
+            {
+              "fieldKey": "fileName",
+              "span": 12
+            }
+          ]
+        },
+        {
+          "cols": [
+            {
+              "fieldKey": "type",
+              "span": 12
+            }
+          ]
+        }
+      ]
+    }
+  }
+}

@@ -1,0 +1,32 @@
+{
+  "name": "fileeditpopup",
+  "title": "File Edit Popup Form",
+  "template": "DashboardView",
+  "url": "/screen/filepopup/view/fileeditpopup",
+  "widgets": [
+    {
+      "widgetName": "clientFilePopupPickList",
+      "position": 0,
+      "gridWidth": 24
+    },
+    {
+      "widgetName": "filePopupCreateButton",
+      "position": 10,
+      "gridWidth": 24
+    },
+    {
+      "widgetName": "fileEditPopupList",
+      "position": 20,
+      "gridWidth": 24
+    },
+    {
+      "widgetName": "fileEditPopupForm",
+      "position": 30,
+      "gridWidth": 24
+    }
+  ],
+  "rolesAllowed": [
+    "CXBOX_USER",
+    "ADMIN"
+  ]
+}

@@ -1,0 +1,14 @@
+{
+  "name": "filePopupCreateButton",
+  "title": "",
+  "type": "Form",
+  "bc": "fileEditPopup",
+  "fields": [],
+  "options": {
+    "actionGroups": {
+      "include": [
+        "create"
+      ]
+    }
+  }
+}

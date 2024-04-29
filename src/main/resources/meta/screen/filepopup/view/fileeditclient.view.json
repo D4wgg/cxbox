@@ -1,0 +1,32 @@
+{
+  "name": "fileeditclient",
+  "title": "File Edit",
+  "template": "DashboardView",
+  "url": "/screen/filepopup/view/fileeditclient",
+  "widgets": [
+    {
+      "widgetName": "clientFilePopupPickList",
+      "position": 0,
+      "gridWidth": 24
+    },
+    {
+      "widgetName": "SecondLevelMenu",
+      "position": 10,
+      "gridWidth": 24
+    },
+    {
+      "widgetName": "fileEditStep",
+      "position": 20,
+      "gridWidth": 24
+    },
+    {
+      "widgetName": "fileEditClient",
+      "position": 30,
+      "gridWidth": 24
+    }
+  ],
+  "rolesAllowed": [
+    "CXBOX_USER",
+    "ADMIN"
+  ]
+}

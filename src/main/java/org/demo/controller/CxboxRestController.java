@@ -17,6 +17,9 @@ import org.demo.service.cxbox.inner.ContactMultivalueService;
 import org.demo.service.cxbox.inner.ContactPickListService;
 import org.demo.service.cxbox.inner.DashboardClientActivitiesService;
 import org.demo.service.cxbox.inner.DashboardFilterService;
+import org.demo.service.cxbox.inner.FilePopupService;
+import org.demo.service.cxbox.inner.FileReadService;
+import org.demo.service.cxbox.inner.FileWriteService;
 import org.demo.service.cxbox.inner.MeetingDocumentsWriteService;
 import org.demo.service.cxbox.inner.MeetingReadService;
 import org.demo.service.cxbox.inner.MeetingWriteService;
@@ -59,7 +62,12 @@ public enum CxboxRestController implements EnumBcIdentifier {
 		dashboardClientActivities(dashboardFilter, DashboardClientActivitiesService.class),
 	dashboardSalesFunnel(dashboardFilter, SaleStatsService.class),
 	dashboardSalesRingProgress(dashboardFilter, SaleProgressStatsService.class),
-	companySuggestionPickList(CompanyService.class);
+	companySuggestionPickList(CompanyService.class),
+	file(FileReadService.class),
+	fileEdit(FileWriteService.class),
+		clientFilePickListPopup(fileEdit, ClientPickListService.class),
+	fileEditPopup(FilePopupService.class),
+		clientFilePopupPickList(fileEditPopup, ClientPickListService.class);
 
 	// @formatter:on
 

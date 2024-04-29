@@ -1,0 +1,40 @@
+{
+  "name": "fileEditClient",
+  "title": "Edit Client",
+  "type": "Form",
+  "bc": "fileEditPopup",
+  "fields": [
+    {
+      "label": "Client Name",
+      "key": "clientName",
+      "type": "pickList",
+      "popupBcName": "clientFilePopupPickList",
+      "pickMap": {
+        "clientName": "fullName",
+        "clientId": "id"
+      }
+    }
+  ],
+  "options": {
+    "actionGroups": {
+      "include": [
+        "next",
+        "previous",
+        "finish",
+        "cancel-create"
+      ]
+    },
+    "layout": {
+      "rows": [
+        {
+          "cols": [
+            {
+              "fieldKey": "clientName",
+              "span": 12
+            }
+          ]
+        }
+      ]
+    }
+  }
+}

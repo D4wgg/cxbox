@@ -1,0 +1,35 @@
+{
+  "name": "fileEditType",
+  "title": "Edit Type",
+  "type": "Form",
+  "bc": "fileEditPopup",
+  "fields": [
+    {
+      "label": "Type",
+      "key": "type",
+      "type": "dictionary"
+    }
+  ],
+  "options": {
+    "actionGroups": {
+      "include": [
+        "next",
+        "previous",
+        "finish",
+        "cancel-create"
+      ]
+    },
+    "layout": {
+      "rows": [
+        {
+          "cols": [
+            {
+              "fieldKey": "type",
+              "span": 12
+            }
+          ]
+        }
+      ]
+    }
+  }
+}

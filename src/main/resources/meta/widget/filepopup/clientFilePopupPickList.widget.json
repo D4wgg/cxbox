@@ -1,0 +1,18 @@
+{
+  "title": "clientFilePopupPickListPickListPopup title",
+  "name": "clientFilePopupPickList",
+  "type": "PickListPopup",
+  "bc": "clientFilePopupPickList",
+  "fields": [
+    {
+      "title": "id",
+      "key": "id",
+      "type": "text"
+    },
+    {
+      "title": "name",
+      "key": "fullName",
+      "type": "text"
+    }
+  ]
+}

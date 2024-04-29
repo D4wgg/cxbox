@@ -1,0 +1,45 @@
+{
+  "name": "fileEditPopupForm",
+  "title": "File Popup Form Widget",
+  "type": "FormPopup",
+  "bc": "fileEdit",
+  "fields": [
+    {
+      "label": "Name",
+      "key": "fileName",
+      "type": "input"
+    },
+    {
+      "label": "Type",
+      "key": "type",
+      "type": "dictionary"
+    }
+  ],
+  "options": {
+    "actionGroups": {
+      "include": [
+        "finish"
+      ]
+    },
+    "layout": {
+      "rows": [
+        {
+          "cols": [
+            {
+              "fieldKey": "fileName",
+              "span": 12
+            }
+          ]
+        },
+        {
+          "cols": [
+            {
+              "fieldKey": "type",
+              "span": 12
+            }
+          ]
+        }
+      ]
+    }
+  }
+}

@@ -1,0 +1,27 @@
+{
+  "name": "filepopup",
+  "icon": "folder",
+  "order": 6,
+  "title": "File popup",
+  "navigation": {
+    "menu": [
+      {
+        "title": "Form",
+        "child": [
+          {
+            "viewName": "fileeditpopup"
+          },
+          {
+            "viewName": "fileeditname"
+          },
+          {
+            "viewName": "fileedittype"
+          },
+          {
+            "viewName": "fileeditclient"
+          }
+        ]
+      }
+    ]
+  }
+}

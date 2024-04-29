@@ -1,0 +1,27 @@
+{
+  "name": "fileeditname",
+  "title": "File Edit",
+  "template": "DashboardView",
+  "url": "/screen/filepopup/view/fileeditname",
+  "widgets": [
+    {
+      "widgetName": "SecondLevelMenu",
+      "position": 10,
+      "gridWidth": 24
+    },
+    {
+      "widgetName": "fileEditStep",
+      "position": 20,
+      "gridWidth": 24
+    },
+    {
+      "widgetName": "fileEditName",
+      "position": 30,
+      "gridWidth": 24
+    }
+  ],
+  "rolesAllowed": [
+    "CXBOX_USER",
+    "ADMIN"
+  ]
+}
