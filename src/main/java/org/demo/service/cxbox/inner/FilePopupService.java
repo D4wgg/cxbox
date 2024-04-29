@@ -12,6 +12,7 @@ import org.cxbox.core.dto.rowmeta.PreAction;
 import org.cxbox.core.service.action.ActionAvailableChecker;
 import org.cxbox.core.service.action.ActionScope;
 import org.cxbox.core.service.action.Actions;
+import org.cxbox.core.service.action.CxboxActionIconSpecifier;
 import org.demo.conf.cxbox.extension.action.ActionsExt;
 import org.demo.controller.CxboxRestController;
 import org.demo.dto.cxbox.inner.FileDTO;
@@ -138,6 +139,7 @@ public class FilePopupService extends VersionAwareResponseService<FileDTO, File>
 				.cancelCreate().text("Cancel").available(bc -> true).add()
 //				.create().text("Add").withPreAction(confirmWithComment("Enter data")).add()
 				.create().text("Add").add()
+				.delete().text("Delete").add()
 				.build();
 	}
 }

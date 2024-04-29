@@ -7,7 +7,7 @@
     {
       "label": "Name",
       "key": "fileName",
-      "type": "hint"
+      "type": "input"
     },
     {
       "label": "Type",

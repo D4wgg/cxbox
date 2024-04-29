@@ -3,26 +3,8 @@
   "title": "",
   "type": "Form",
   "bc": "fileEditPopup",
-  "fields": [
-    {
-      "name": "File Name",
-      "key": "fileName",
-      "type": "input"
-    }
-  ],
+  "fields": [],
   "options": {
-    "layout": {
-      "rows": [
-        {
-          "cols": [
-            {
-              "fieldKey": "fileName",
-              "span": 12
-            }
-          ]
-        }
-      ]
-    },
     "actionGroups": {
       "include": [
         "create"
